@@ -1,44 +1,44 @@
-/*******************PRESENTACI”N*******************
-NOMBRE: Alejandra EstefanÌa MartÌnez MuÒoz
+/*******************PRESENTACI√ìN*******************
+NOMBRE: Alejandra Estefan√≠a Mart√≠nez Mu√±oz
 FECHA: 25 de enero de 2023
 PROGRAMA: actividad3.c
 CENTRO UNIVERSITARIO DE LOS ALTOS / UNIVERSIDAD DE GUADALAJARA
-INGENIERÕA EN COMPUTACI”N / 2DO SEMESTRE
+INGENIER√çA EN COMPUTACI√ìN / 2DO SEMESTRE
 PROFESOR: Carlos Javier Cruz Franco
-DESCRIPCI”N: Elaborar programa donde se le pida un n˙m. al usuario con tres condiciones y ciclo.
+DESCRIPCI√ìN: Elaborar programa donde se le pida un n√∫m. al usuario con tres condiciones y ciclo.
 **************************************************/ 
-#include <stdio.h>//IncluÌr librerÌa
+#include <stdio.h>//Inclu√≠r librer√≠a
 
 int main() { //Programa principal
 
-	//DefiniciÛn de variables
+	//Definici√≥n de variables
 	int a, b, i;
 	
 	do{ //Ciclo
-	//Solicitud de n˙mero
+	//Solicitud de n√∫mero
 	printf("Bienvenido al programa :D\n*.*.*.*.*.*.*.*.*.*.*.*\nIngrese un numero--> ");
 	scanf("%d", &a);
 	
-	//CondiciÛn 1: n˙mero mayor a 0 pero menor a 500
+	//Condici√≥n 1: n√∫mero mayor a 0 pero menor a 500
 	if (a > 0 && a < 500) {
 		printf("__________________________________________________________________\n");
     for (i = 0; i < 100; i++) {
       a += 5;
       printf("%d\t", a);
     }
-    //CondiciÛn 2: n˙mero mayor a 500 pero menor a 1000
+    //Condici√≥n 2: n√∫mero mayor a 500 pero menor a 1000
  	} else if (a >= 500 && a < 1000) {
     printf("__________________________________________________________________\n");
     for (i = 0; i < 50; i++) {
       a += 10;
       printf("%d\t", a);
     }
-    //CondiciÛn 3: n˙mero mayor a 1000
+    //Condici√≥n 3: n√∫mero mayor a 1000
 	} else if (a >= 1000) {
     printf("No se puede calcular el valor\a\a\n");
   	}
   	//Preguntar para repetir el programa
-  	printf("________________________________________________\nøQuieres repetir el programa?\n(pon 1 para si y 0 para no)\n");
+  	printf("________________________________________________\n¬øQuieres repetir el programa?\n(pon 1 para si y 0 para no)\n");
   	scanf("%d", &b);
   }while (b==1);
   //Cierre del programa
